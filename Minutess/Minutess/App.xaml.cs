@@ -12,7 +12,7 @@ namespace Minutess
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new EntriesPage();
             Entries = new MemoryEntryStore();
             Entries.LoadMockData();
 		}

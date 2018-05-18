@@ -4,7 +4,14 @@
              x:Class="Minutess.EntriesPage">
     <ContentPage.Content>
         <ListView x:Name="entries">
-            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell 
+                        Text="{Binding Path=Title}"
+                        Detail="{Binding Path=CreateDate}"/>
+
+                </DataTemplate>   
+            </ListView.ItemTemplate>
         </ListView>
     </ContentPage.Content>
 </ContentPage>
